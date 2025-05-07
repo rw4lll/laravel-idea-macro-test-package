@@ -9,7 +9,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\ServiceProvider;
 use Override;
 
-class MyCustomServiceProvider extends ServiceProvider
+class CustomServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
