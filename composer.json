@@ -1,0 +1,27 @@
+{
+    "name": "my/custom-package-example",
+    "description": "Test laravel idea macro support when loaded from external package",
+    "type": "library",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^12.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "My\\CustomPackageExample\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "My\\CustomPackageExample\\CustomServiceProvider"
+            ]
+        }
+    }
+}
